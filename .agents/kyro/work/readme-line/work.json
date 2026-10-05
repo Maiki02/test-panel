@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "kind": "organic-work",
+  "id": "readme-line",
+  "title": "Add a line to the README",
+  "objective": "Add one line of English text to README.md, below the existing \"# test-panel\" title.",
+  "brief": {
+    "path": "brief.md",
+    "digest": "9ab591ad56b553ff0c7638582953f3267723470f46d2c0102f47eb18487112ab",
+    "sourceIdea": null
+  },
+  "state": "closed",
+  "revision": 6,
+  "createdAt": "2026-10-05T23:38:35.471Z",
+  "updatedAt": "2026-10-05T23:40:39.528Z",
+  "handoff": {
+    "nextAction": "done",
+    "nextTaskId": null,
+    "blockedReason": null
+  },
+  "tasks": [
+    {
+      "id": "W1",
+      "title": "Add English line to README",
+      "description": "Add one English line describing the project below the title in README.md.",
+      "context": "README.md currently contains only the '# test-panel' title. The user chose English.",
+      "filesToTouch": [
+        "README.md"
+      ],
+      "acceptanceCriteria": [
+        "README.md keeps the '# test-panel' title",
+        "README.md gains exactly one new English line"
+      ],
+      "dependsOn": [],
+      "definitionRevision": 1,
+      "status": "verified",
+      "blocker": null,
+      "evidence": {
+        "summary": "Added one English description line below the '# test-panel' title in README.md.",
+        "validations": [
+          {
+            "command": "git diff --stat",
+            "result": "passed",
+            "note": "README.md keeps the title and gains exactly one line"
+          }
+        ],
+        "filesChanged": [
+          "README.md"
+        ],
+        "notes": "none",
+        "by": "maker-agent",
+        "recordedAt": "2026-10-05T23:40:29.348Z",
+        "definitionRevision": 1,
+        "materialDigest": "62d0240bc070fd369a1ed8a75af618ad10f5e8f28926073fccef6703a95832fa"
+      },
+      "verdict": {
+        "result": "pass",
+        "checkedCriteria": [
+          "README.md keeps the '# test-panel' title",
+          "README.md gains exactly one new English line"
+        ],
+        "findings": [],
+        "by": "checker-agent",
+        "reviewedAt": "2026-10-05T23:40:33.570Z",
+        "definitionRevision": 1,
+        "evidenceDigest": "97cc15585210b681089a5b7c5d796ed17b4d3133a6570cfb898c579c9dc1d10d",
+        "reviewedMaterialDigest": "62d0240bc070fd369a1ed8a75af618ad10f5e8f28926073fccef6703a95832fa"
+      },
+      "disposition": null
+    }
+  ],
+  "activity": [
+    {
+      "seq": 1,
+      "at": "2026-10-05T23:38:35.471Z",
+      "event": "created",
+      "taskId": null,
+      "by": "claude",
+      "reason": "Created through the Work CLI.",
+      "revision": 1
+    },
+    {
+      "seq": 2,
+      "at": "2026-10-05T23:39:20.524Z",
+      "event": "tasks_planned",
+      "taskId": null,
+      "by": "claude",
+      "reason": "Planned 1 Work task.",
+      "revision": 2
+    },
+    {
+      "seq": 3,
+      "at": "2026-10-05T23:40:02.907Z",
+      "event": "task_started",
+      "taskId": "W1",
+      "by": "cli",
+      "reason": "Task started through the Work CLI.",
+      "revision": 3
+    },
+    {
+      "seq": 4,
+      "at": "2026-10-05T23:40:29.348Z",
+      "event": "evidence_recorded",
+      "taskId": "W1",
+      "by": "maker-agent",
+      "reason": "Evidence recorded with 1 validation result.",
+      "revision": 4
+    },
+    {
+      "seq": 5,
+      "at": "2026-10-05T23:40:33.570Z",
+      "event": "review_recorded",
+      "taskId": "W1",
+      "by": "checker-agent",
+      "reason": "Task review recorded with pass.",
+      "revision": 5
+    },
+    {
+      "seq": 6,
+      "at": "2026-10-05T23:40:39.528Z",
+      "event": "work_closed",
+      "taskId": null,
+      "by": "pilot",
+      "reason": "Trabajo completado por el piloto",
+      "revision": 6
+    }
+  ],
+  "closure": {
+    "outcome": "completed",
+    "reason": "Trabajo completado por el piloto",
+    "by": "pilot",
+    "closedAt": "2026-10-05T23:40:39.528Z",
+    "briefDigest": "9ab591ad56b553ff0c7638582953f3267723470f46d2c0102f47eb18487112ab",
+    "finalRevision": 6
+  },
+  "promotion": null
+}
